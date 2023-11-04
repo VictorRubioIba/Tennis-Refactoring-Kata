@@ -67,12 +67,11 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String getResultWhenAreEquals() {
-        String score = switch (m_score1) {
+		return switch (m_score1) {
 			case 0 -> "Love-All";
 			case 1 -> "Fifteen-All";
 			case 2 -> "Thirty-All";
 			default -> "Deuce";
 		};
-		return score;
     }
 }
