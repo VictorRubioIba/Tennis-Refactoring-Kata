@@ -26,7 +26,6 @@ public class TennisGame1 implements TennisGame {
 
     private String getResultWhenIsLessThan4() {
         String score = "";
-        int tempScore;
         for (int i=1; i<3; i++)
         {
             score = getPlayerAndScore(i, score);
