@@ -15,17 +15,17 @@ public class TennisGame1 implements TennisGame {
     }
 
     public String getScore() {
-        String score = "";
         if (m_score1==m_score2)
 			return getResultWhenAreEquals();
         else if (m_score1>=4 || m_score2>=4)
 			return getResultWhenIsMoreThan4();
         else
-		return getResultWhenIsLessThan4(score);
+		return getResultWhenIsLessThan4();
 
     }
 
-    private String getResultWhenIsLessThan4(String score) {
+    private String getResultWhenIsLessThan4() {
+        String score = "";
         int tempScore;
         for (int i=1; i<3; i++)
         {
