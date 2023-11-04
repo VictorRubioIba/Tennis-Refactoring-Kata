@@ -17,12 +17,12 @@ public class TennisGame1 implements TennisGame {
     public String getScore() {
         String score = "";
         if (m_score1==m_score2)
-			score = getResultWhenAreEquals();
+			return getResultWhenAreEquals();
         else if (m_score1>=4 || m_score2>=4)
-			score = getResultWhenIsMoreThan4();
+			return getResultWhenIsMoreThan4();
         else
-			score = getResultWhenIsLessThan4(score);
-        return score;
+		return getResultWhenIsLessThan4(score);
+
     }
 
     private String getResultWhenIsLessThan4(String score) {
