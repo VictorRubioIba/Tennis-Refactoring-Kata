@@ -37,25 +37,17 @@ public class TennisGame1 implements TennisGame {
 
 	private String getPlayerAndScore(int i, String score) {
 		int tempScore;
-		if (i == 1) {
-			tempScore = m_score1;
-		} else {
+		if (i != 1) {
 			score += "-";
 			tempScore = m_score2;
+		} else {
+			tempScore = m_score1;
 		}
 		switch (tempScore) {
-			case 0:
-				score += "Love";
-				break;
-			case 1:
-				score += "Fifteen";
-				break;
-			case 2:
-				score += "Thirty";
-				break;
-			case 3:
-				score += "Forty";
-				break;
+			case 0 -> score += "Love";
+			case 1 -> score += "Fifteen";
+			case 2 -> score += "Thirty";
+			case 3 -> score += "Forty";
 		}
 		return score;
 	}
