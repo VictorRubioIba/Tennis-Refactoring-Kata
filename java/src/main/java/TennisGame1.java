@@ -23,7 +23,7 @@ public class TennisGame1 implements TennisGame {
         }
         else if (m_score1>=4 || m_score2>=4)
         {
-            score = getResultWhenAdvantage();
+            score = getResultWhenIsMoreThan4();
         }
         else
         {
@@ -51,7 +51,7 @@ public class TennisGame1 implements TennisGame {
         return score;
     }
 
-    private String getResultWhenAdvantage() {
+    private String getResultWhenIsMoreThan4() {
         String score;
         int minusResult = m_score1-m_score2;
         if (minusResult==1) score ="Advantage player1";
