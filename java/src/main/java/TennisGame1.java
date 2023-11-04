@@ -19,7 +19,7 @@ public class TennisGame1 implements TennisGame {
         int tempScore=0;
         if (m_score1==m_score2)
         {
-            score = getString();
+            score = getResultWhenAreEquals();
         }
         else if (m_score1>=4 || m_score2>=4)
         {
@@ -61,7 +61,7 @@ public class TennisGame1 implements TennisGame {
         return score;
     }
 
-    private String getString() {
+    private String getResultWhenAreEquals() {
         String score;
         switch (m_score1)
         {
